@@ -2,42 +2,55 @@
 let product = [
   {
     Image: "../images/categories/categories-image1.png",
+    class: "katta_rasm",
   },
   {
     Image: "../images/categories/categories-image2.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image3.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image4.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image5.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image6.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image7.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image8.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image9.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image10.png",
+    class: "katta_rasm",
   },
   {
     Image: "../images/categories/categories-image11.png",
+    class: "kichik_rasm",
   },
   {
     Image: "../images/categories/categories-image12.png",
+    class: "katta_rasm",
   },
   {
     Image: "../images/categories/categories-image13.png",
+    class: "kichik_rasm",
   },
 ];
 
@@ -47,7 +60,7 @@ function displayProducts(data) {
   let str = "";
   data.forEach((product) => {
     str += `
-        <img src=${product.Image} alt="image" />
+        <img src=${product.Image} alt="image" class="${product.class}"/>
       `;
   });
 
